@@ -1,0 +1,376 @@
+/* Общ стил за цялата страница */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #e6f2fa);
+  color: #000;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 30px 0;
+  background-color: #f1f9ff;
+  color: #003e63;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Навигация с dropdown */
+  nav {
+    background-color: #005288;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    position: relative;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #0077aa;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0077aa;
+    min-width: 200px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #005f88;
+  }
+  
+  nav ul li:hover .dropdown-content {
+    display: flex;
+  }
+  
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Зиг-заг секции */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Изображения + описания */
+figure {
+  flex: 1 1 40%;
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+figure figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #444;
+  font-size: 16px;
+}
+
+/* Текст до снимката */
+.text {
+  flex: 1 1 50%;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Адаптивност */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+  }
+
+  .section {
+    flex-direction: column !important;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  figure img {
+    width: 100%;
+  }
+}
+
+
+.section1 {
+  display: flex;
+  flex-direction: column; /* подреждане вертикално */
+  align-items: center;    /* центриране хоризонтално */
+  text-align: center;     /* центриране на текста */
+  gap: 10px;              /* разстояние между снимка и текст */
+}
+
+.section1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.section1 .caption {
+  font-size: 18px;
+  color: #444;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.section1 .text1 {
+  max-width: 700px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.triple-container {
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-center; /* или space-between / center */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.triple {
+  flex: 1 1 30%; /* три в редицата */
+  text-align: center;
+}
+
+.triple img {
+ 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.triple figcaption {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.section-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+
+
+.triple-gallery {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.triple-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.triple-gallery img {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.triple-gallery figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #444;
+}
+
+.text-block {
+  flex: 1 1 55%;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.gallery-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: nowrap; /* Keep all 6 in one row */
+  margin-bottom: 10px;
+}
+
+.gallery-row img {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.gallery-caption {
+  font-size: 16px;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .gallery-row {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .gallery-row img {
+    width: 45%; /* 2 images per row on small screens */
+    margin-bottom: 15px;
+  }
+}
+
+
+.story-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.story-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.story-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.story-img {
+  flex: 0 0 300px;
+}
+
+.story-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.story-row p {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.story-row p img {
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .story-row,
+  .story-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-img,
+  .story-row p img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .story-row p {
+    align-items: center;
+  }
+}

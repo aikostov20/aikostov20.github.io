@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Интересно за Северен централен район</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f7ff;
+            color: #222;
+            text-align: center;
+        }
+
+       
+  nav {
+    background-color: #005288;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    position: relative;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #0077aa;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0077aa;
+    min-width: 200px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #005f88;
+  }
+  
+  nav ul li:hover .dropdown-content {
+    display: flex;
+  }
+
+        header {
+            background-color: #d6ecf9;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .city {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .city h2 {
+            color: #004d80;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .city p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin: 50px 0 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="index.html">Начало</a></li>
+    
+          <li>
+            <a href="NatureResorces.html">Природни ресурси</a>
+            <div class="dropdown-content">
+              <a href="NatureResorces.html#relef">Релеф</a>
+              <a href="NatureResorces.html#klimat">Климат</a>
+              <a href="NatureResorces.html#izkopaemi">Полезни изкопаеми</a>
+              <a href="NatureResorces.html#vodi">Води</a>
+              <a href="NatureResorces.html#pochvi">Почви</a>
+              
+              <a href="NatureResorces.html#rastAni">Растителност и животни</a>
+              <a href="NatureResorces.html#zoni">Защитени територии</a>
+             
+            </div>
+          </li>
+            <li> <a href="naselenie.html">Население и селищна мрежа</a></li>
+          <li> <a href="Economy.html">Икономика</a>
+          
+            <div class="dropdown-content">
+              
+              <a href="Economy.html#parvichen">Първичен сектор</a>
+              <a href="Economy.html#vtorichen">Вторичен сектор</a>
+              <a href="Economy.html#tretichen">Третичен сектор</a>
+            </div>
+          </li>
+          <li><a href="Admin.html">Административно разпределение</a></li>
+          <li><a href="badeshte.html">Поглед в бъдещето</a></li>
+          <li><a href="interesno.html">Интересно</a></li>
+        </ul>
+      </nav>
+<header>
+    <h1>Интересно за Северен централен район</h1>
+</header>
+
+<main class="content">
+
+    <section class="city">
+        <h2>Велико Търново – някогашната столица на Второто българско царство</h2>
+        <p>
+            Царевец – средновековната крепост във Велико Търново, е била седалище на българските царе в продължение на почти 200 години (1185–1393).
+        </p>
+    </section>
+
+    <section class="city">
+        <h2>Габрово – градът на хумора и сатиричната икономия</h2>
+        <p>
+            Габрово е известен като “българския Манчестър” заради индустриалната си слава в миналото, но и като град на най-остроумните шеги и анекдоти. Там се намира единственият в Източна Европа Музей на хумора и сатирата.
+        </p>
+    </section>
+
+    <section class="city">
+        <h2>Русе – „малката Виена“ на Дунав</h2>
+        <p>
+            Русе е наричан така заради своята архитектура в стил сецесион, наподобяваща тази на Виена. Това е най-големият български град на Дунав.
+        </p>
+    </section>
+
+    <section class="city">
+        <h2>Великотърновски университет – културен център на региона</h2>
+        <p>
+            Великотърновският университет „Св. св. Кирил и Методий“, основан през 1963 г., е сред най-важните културни и образователни институции в страната.
+        </p>
+    </section>
+
+    <section class="city">
+        <h2>Русе и железницата</h2>
+        <p>
+            Първата жп линия в България е била планирана да минава през Русе. Макар да е построена по-късно, Русе остава ключов железопътен и речен транспортен център между България и Румъния (чрез Дунав мост I).
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © 2025 Северен централен район
+</footer>
+
+</body>
+</html>
